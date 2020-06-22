@@ -10,7 +10,7 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 
 body {
-  	background-color: #0d1114;
+  	background-color: #f2f2f2;
   	font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -149,17 +149,18 @@ a:after {
 
 
 #footer {
-	background-color: #f2f2f2;
+	background-color: #0d1114;
 	padding-top: 50px;
+    border-top: 1px solid #ff6600;
 	padding-bottom: 50px;
 }
 
 #footer p {
-	color: #0d1114;
+	color: white;
 }
 
 #footer h4 {
-	color: #0d1114;
+	color: white;
 	text-transform: uppercase;
 	padding-bottom: 20px;
 }
@@ -219,7 +220,8 @@ bt {
     .zoomOverlay {
         position:absolute;
         top:0; left:0;
-        bottom:0; right:0;
+        bottom:20px;
+        right:0;
         display:none;
         background-image:url(../img/zoom.png);
         background-repeat:no-repeat;
@@ -265,4 +267,27 @@ bt {
 
 .aria-bottom {
     padding-bottom: 20px;
+}
+
+i.fab {
+    font-size: 30px;
+}
+
+hr {
+    border-color: #ff6600;
+}
+
+.img-div {
+    object-fit: contain;
+}
+
+.container-fullwidth {
+    width: 100vw;
+    background-color: #0d1114;
+    border-top: 1px solid #ff6600;
+    border-bottom: 1px solid #ff6600;
+}
+
+.container.pt.works a {
+    font-weight: bold;
 }
