@@ -1,0 +1,498 @@
+/* stile html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.container {
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+.back-green {
+    height: 20%;
+    background-color: #009688;
+}
+
+.back-gray {
+    height: 80%;
+    background-color: #d6dbd7;
+}
+
+.bgc-wa-gray {
+    background-color: #ededed;
+}
+
+img {
+    border-radius: 50%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.img-round {
+    height: 100%;
+    float: left;
+    display: flex;
+    align-items: center;
+}
+
+i {
+    font-size: 22px;
+    color: #9e9e9a;
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+i:hover {
+    color: black;
+}
+
+h4 {
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    color: #b9b9b9;
+}
+
+/* stile box chat centrale */
+.container-chat {
+    width: 80vw;
+    height: 90vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* stile header-footer */
+.header-room,
+.footer-room,
+.header-list {
+    height: 70px;
+    z-index: 5;
+}
+
+.header-room {
+    padding-top: 5px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* box sinistro */
+.header-list .img-round img,
+.right .img-round img {
+    padding: 10px 5px;
+}
+
+.left {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    background-color: #ffffff;
+    width: 40%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* stile header-list */
+.header-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 10px;
+}
+
+.header-list .fas.fa-comment-alt {
+    display: none;
+}
+
+.header-list .icons {
+    display: flex;
+}
+
+/* stile notification-box */
+.notification-box {
+    height: 100px;
+    background-color: #9de1fe;
+    display: flex;
+    align-items: center;
+}
+
+.notification-box i {
+    padding: 15px 10px;
+    background-color: white;
+    font-size: 30px;
+    border-radius: 50%;
+    color: #9de1fe;
+    cursor: default;
+}
+
+.notification-box .img-round {
+    margin: 0 10px 0 15px;
+}
+
+.notification-box a {
+    color: rgb(96, 96, 96);
+    font-size: 14px;
+}
+/* stile search-chat */
+.search-chat {
+    height: 50px;
+    background-color: #f7f7f7;
+    padding: 5px;
+    position: relative;
+}
+
+.search-input-box {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.search-chat i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(-50%, -50%);
+}
+
+.search-chat input {
+    border: none;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-50%);
+
+}
+
+/* stile chat-list */
+.chat-list {
+    height: calc(100% - 50px - 100px - 70px);
+    overflow-y: auto;
+}
+/* stile chat-preview */
+.chat-preview {
+    height: 80px;
+    border-bottom: 1px solid #f2f2f2;
+    position: relative;
+}
+
+.chat-preview .overlay {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+
+/* gestione hover su CSS e click su JS */
+.chat-preview:hover .overlay {
+    display: block;
+}
+
+.overlay.active {
+    display: block;
+}
+
+.chat-preview .img-round img {
+    padding: 10px 15px;
+}
+
+.chat-text {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 5px;
+}
+
+.profile-name-time {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* box destro */
+.right {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.chat-room-container{
+    height: 100%;
+    padding-bottom: 80px;
+    position: relative;
+    background-image: url('https://i2.wp.com/www.techgrapple.com/wp-content/uploads/2016/07/WhatsApp-Chat-theme-iPhone-stock-744.jpg?fit=744%2C1392&ssl=1');
+    background-size: contain;
+    display: none;
+}
+
+.chat-room-container.active {
+    display: block;
+}
+
+#my-account {
+    height: 100%;
+}
+
+#my-account section {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.back-light-green {
+    background-color: #e1ffc7;
+}
+
+.back-white {
+    background-color: white;
+}
+
+#my-account section.credits {
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#my-account section i {
+    padding-right: 20px;
+    color: #009688;
+}
+
+#my-account section h4:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#my-account section p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: black;
+}
+
+#my-account section.credits a {
+    text-decoration: none;
+    color: black;
+}
+
+#my-account section.credits p {
+    padding-bottom: 10px;
+    cursor: auto;
+    text-decoration: none;
+    color: #b9b9b9;
+}
+/* stile header */
+.header-room {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 10px;
+}
+
+.header-room .chat-text {
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-room .header-left {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.header-room i.fas.fa-bars{
+    padding: 0 20px 0 0;
+}
+
+.header-room p {
+    color: rgb(96, 96, 96);
+}
+
+/* stile main-room */
+.main-room {
+    height: calc(100% - 70px);
+    padding: 20px 40px 60px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.chat-message {
+    padding: 15px 20px 15px 15px;
+    margin-bottom: 15px;
+    max-width: 40%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-time {
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    color: #b9b9b9;
+    font-size: 10px;
+}
+
+.chat-message p {
+    color: black;
+}
+
+.chat-message i {
+    display: none;
+    font-size: 14px;
+}
+
+.chat-message:hover i {
+    display: block;
+}
+
+.sent {
+    align-self: flex-end;
+    background-color: #e1ffc7;
+}
+
+.received {
+    align-self: flex-start;
+    background-color: white;
+}
+
+/* stile edit-message-container */
+.edit-message {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.19);
+    position: absolute;
+    transform: translate(-10%, 70%);
+    width: 130px;
+    z-index: 5;
+    display: none;
+}
+
+.edit-message.active {
+    display: block;
+}
+
+.edit-message p {
+    color: white;
+    line-height: 30px;
+}
+
+.edit-message p:hover {
+    color: rgb(0, 255, 255);
+    line-height: 30px;
+    cursor: pointer;
+}
+
+/* stile footer-room */
+.footer-room {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.input-msg {
+    width: 80%;
+    height: 80%;
+    background-color: white;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+.box-shadow {
+    box-shadow: inset 0px 0px 2px 2px #9de1fe;
+}
+
+.footer-room i {
+    padding: 0;
+}
+
+.input-msg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.input-msg input {
+    width: 90%;
+    border: none;
+    height: 100%;
+    font-size: 15px;
+}
+
+.emoticon,
+.tasto-invio {
+    width: 10%;
+    text-align: center;
+}
+
+/* stile template */
+
+.template {
+    display: none;
+}
+
+/* media screen sopra i 768px */
+@media screen and (min-width: 768px) {
+
+    .left {
+        position: relative;
+        display: block;
+    }
+
+    .fas.fa-times-circle {
+        display: none;
+    }
+    .header-list .fas.fa-comment-alt {
+        display: block;
+    }
+
+    .click-to-chat {
+        display: none;
+    }
+
+    .right {
+        width: 60%;
+    }
+
+    .footer-room {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 825px) {
+    .header-right i {
+        padding-left: 5px;
+    }
+}
+/*  */

@@ -291,3 +291,11 @@ hr {
 .container.pt.works a {
     font-weight: bold;
 }
+
+.about {
+    color: #999;
+}
+
+.about h4 {
+    color: #666;
+}

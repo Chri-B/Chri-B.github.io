@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>js-html-css-boolzap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.3/handlebars.min.js" charset="utf-8"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="back-green"></div>
+            <div class="back-gray"></div>
+            <div class="container-chat clearfix">
+                <div class="left bgc-wa-gray">
+                    <div class="header-list bgc-wa-gray">
+                        <div class="img-round">
+                            <img data-codice-contatto="my-account" src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Round&hairColor=Blonde&facialHairType=BeardMagestic&facialHairColor=Blonde&clotheType=Hoodie&clotheColor=Gray02&eyeType=Squint&eyebrowType=UpDown&mouthType=Disbelief&skinColor=Light" alt="my profile">
+                        </div>
+                        <div class="icons">
+                            <i class="fas fa-times-circle"></i>
+                            <i class="fas fa-sync-alt"></i>
+                            <i class="fas fa-comment-alt"></i>
+                            <i class="fas fa-ellipsis-v"></i>
+                        </div>
+                    </div>
+                    <div class="notification-box clearfix">
+                        <div class="img-round">
+                            <i class="fas fa-bell-slash"></i>
+                        </div>
+                        <div class="notification-text">
+                            <h4>Ricevi notifiche di nuovi messaggi</h4>
+                            <p>Attiva notifiche desktop</p>
+                        </div>
+                    </div>
+                    <div class="search-chat">
+                        <div class="search-input-box">
+                            <i class="fas fa-search"></i>
+                            <input id="find-contact" type="text" placeholder="Cerca un contatto">
+                        </div>
+                    </div>
+                    <div class="chat-list">
+                        <div class="chat-preview clearfix" data-codice-contatto="0">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairBigHair&accessoriesType=Wayfarers&hairColor=SilverGray&facialHairType=BeardMagestic&facialHairColor=BrownDark&clotheType=BlazerSweater&clotheColor=Pink&eyeType=Cry&eyebrowType=UnibrowNatural&mouthType=Concerned&skinColor=DarkBrown" alt="profile-0">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="1">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Prescription01&hairColor=Red&facialHairType=MoustacheFancy&facialHairColor=Auburn&clotheType=BlazerSweater&clotheColor=PastelRed&eyeType=Dizzy&eyebrowType=Default&mouthType=Disbelief&skinColor=DarkBrown" alt="profile-1">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="2">
+                            <div class="overlay active"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairBigHair&accessoriesType=Prescription02&hairColor=BlondeGolden&facialHairType=Blank&facialHairColor=Red&clotheType=ShirtVNeck&clotheColor=White&graphicType=Selena&eyeType=WinkWacky&eyebrowType=SadConcernedNatural&mouthType=Grimace&skinColor=Yellow" alt="profile-2">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="3">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&accessoriesType=Kurt&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Brown&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Skull&eyeType=EyeRoll&eyebrowType=RaisedExcitedNatural&mouthType=Grimace&skinColor=Pale" alt="profile-3">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="4">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=Eyepatch&accessoriesType=Wayfarers&hairColor=Platinum&facialHairType=MoustacheFancy&facialHairColor=Red&clotheType=ShirtScoopNeck&clotheColor=PastelYellow&eyeType=WinkWacky&eyebrowType=SadConcernedNatural&mouthType=Smile&skinColor=Brown" alt="profile-4">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="5">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Prescription01&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Platinum&clotheType=Overall&clotheColor=Pink&eyeType=Side&eyebrowType=UpDown&mouthType=Tongue&skinColor=Black" alt="profile-5">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="6">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Wayfarers&hairColor=Auburn&facialHairType=Blank&facialHairColor=Black&clotheType=ShirtVNeck&clotheColor=White&eyeType=Default&eyebrowType=UpDown&mouthType=Tongue&skinColor=Light" alt="profile-6">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="7">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Kurt&hatColor=Gray02&hairColor=Red&facialHairType=MoustacheFancy&facialHairColor=BlondeGolden&clotheType=ShirtCrewNeck&clotheColor=PastelRed&eyeType=Cry&eyebrowType=RaisedExcited&mouthType=Vomit&skinColor=Yellow" alt="profile-7">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                        <div class="chat-preview clearfix" data-codice-contatto="8">
+                            <div class="overlay"></div>
+                            <div class="img-round">
+                                <img src="https://avataaars.io/?avatarStyle=Circle&topType=Turban&accessoriesType=Round&hatColor=Blue03&facialHairType=BeardMedium&facialHairColor=Red&clotheType=Overall&clotheColor=Gray01&eyeType=Happy&eyebrowType=RaisedExcited&mouthType=Grimace&skinColor=Light" alt="profile-8">
+                            </div>
+                            <div class="chat-info">
+                                <div class="chat-text"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="chat-room-container" data-codice-contatto="my-account">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img data-codice-contatto="my-account" src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortCurly&accessoriesType=Round&hairColor=Blonde&facialHairType=BeardMagestic&facialHairColor=Blonde&clotheType=Hoodie&clotheColor=Gray02&eyeType=Squint&eyebrowType=UpDown&mouthType=Disbelief&skinColor=Light" alt="my profile">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>MY ACCOUNT</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div id="my-account" class="main-room">
+                            <section class="back-white">
+                                <div>
+                                    <i class="fas fa-key"></i>
+                                </div>
+                                <div class="settings">
+                                    <h4>Account</h4>
+                                    <p>Privacy, sicurezza, cambia numero</p>
+                                </div>
+                            </section>
+                            <section class="back-light-green">
+                                <div>
+                                    <i class="fas fa-comment-alt"></i>
+                                </div>
+                                <div class="settings">
+                                    <h4>Chat</h4>
+                                    <p>Tema, sfondi, cronologia chat</p>
+                                </div>
+                            </section>
+                            <section class="back-white">
+                                <div>
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <div class="settings">
+                                    <h4>Notifiche</h4>
+                                    <p>Toni messaggi, gruppi e chiamate</p>
+                                </div>
+                            </section>
+                            <section class="back-light-green">
+                                <div>
+                                    <i class="fas fa-circle-notch"></i>
+                                </div>
+                                <div class="settings">
+                                    <h4>Utilizzo dati e archiviazione</h4>
+                                    <p>Toni messaggi, gruppi e chiamate</p>
+                                </div>
+                            </section>
+                            <section class="back-white">
+                                <div>
+                                    <i class="far fa-question-circle"></i>
+                                </div>
+                                <div class="settings">
+                                    <h4>Aiuto</h4>
+                                    <p>Toni messaggi, gruppi e chiamate</p>
+                                </div>
+                            </section>
+                            <section class="back-light-green credits">
+                                <p>from</p>
+                                <a href="#"><h4>FaceBOOL</h4></a>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="0">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairBigHair&accessoriesType=Wayfarers&hairColor=SilverGray&facialHairType=BeardMagestic&facialHairColor=BrownDark&clotheType=BlazerSweater&clotheColor=Pink&eyeType=Cry&eyebrowType=UnibrowNatural&mouthType=Concerned&skinColor=DarkBrown" alt="profile-0">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Sara</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="1">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Prescription01&hairColor=Red&facialHairType=MoustacheFancy&facialHairColor=Auburn&clotheType=BlazerSweater&clotheColor=PastelRed&eyeType=Dizzy&eyebrowType=Default&mouthType=Disbelief&skinColor=DarkBrown" alt="profile-1">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Fabio</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div  class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container active" data-codice-contatto="2">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairBigHair&accessoriesType=Prescription02&hairColor=BlondeGolden&facialHairType=Blank&facialHairColor=Red&clotheType=ShirtVNeck&clotheColor=White&graphicType=Selena&eyeType=WinkWacky&eyebrowType=SadConcernedNatural&mouthType=Grimace&skinColor=Yellow" alt="profile-2">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Sofia</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="3">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairDreads01&accessoriesType=Kurt&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Brown&clotheType=GraphicShirt&clotheColor=Gray01&graphicType=Skull&eyeType=EyeRoll&eyebrowType=RaisedExcitedNatural&mouthType=Grimace&skinColor=Pale" alt="profile-3">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Marco</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="4">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=Eyepatch&accessoriesType=Wayfarers&hairColor=Platinum&facialHairType=MoustacheFancy&facialHairColor=Red&clotheType=ShirtScoopNeck&clotheColor=PastelYellow&eyeType=WinkWacky&eyebrowType=SadConcernedNatural&mouthType=Smile&skinColor=Brown" alt="profile-4">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Luca</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="5">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Prescription01&hairColor=Brown&facialHairType=BeardLight&facialHairColor=Platinum&clotheType=Overall&clotheColor=Pink&eyeType=Side&eyebrowType=UpDown&mouthType=Tongue&skinColor=Black" alt="profile-5">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Paolo</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="6">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=LongHairFro&accessoriesType=Wayfarers&hairColor=Auburn&facialHairType=Blank&facialHairColor=Black&clotheType=ShirtVNeck&clotheColor=White&eyeType=Default&eyebrowType=UpDown&mouthType=Tongue&skinColor=Light" alt="profile-6">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Mattia</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="7">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Kurt&hatColor=Gray02&hairColor=Red&facialHairType=MoustacheFancy&facialHairColor=BlondeGolden&clotheType=ShirtCrewNeck&clotheColor=PastelRed&eyeType=Cry&eyebrowType=RaisedExcited&mouthType=Vomit&skinColor=Yellow" alt="profile-7">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Giulio</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="chat-room-container" data-codice-contatto="8">
+                        <div class="header-room bgc-wa-gray">
+                            <div class="header-left">
+                                <div class="click-to-chat">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="img-round">
+                                    <img src="https://avataaars.io/?avatarStyle=Circle&topType=Turban&accessoriesType=Round&hatColor=Blue03&facialHairType=BeardMedium&facialHairColor=Red&clotheType=Overall&clotheColor=Gray01&eyeType=Happy&eyebrowType=RaisedExcited&mouthType=Grimace&skinColor=Light" alt="profile-8">
+                                </div>
+                                <div class="chat-text">
+                                    <div class="profile-name-time">
+                                        <div class="name">
+                                            <h4>Andrea</h4>
+                                        </div>
+                                    </div>
+                                    <div class="last-access">
+                                        <p>Ultimo accesso ieri alle 02:26</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-right icons">
+                                <i class="fas fa-search"></i>
+                                <i class="fas fa-paperclip"></i>
+                                <i class="fas fa-ellipsis-v"></i>
+                            </div>
+                        </div>
+                        <div class="main-room"></div>
+                    </div>
+                    <div class="footer-room bgc-wa-gray">
+                        <div class="emoticon">
+                            <i class="far fa-smile"></i>
+                        </div>
+                        <div class="input-msg">
+                                <input id="messaggio-input" type="text" placeholder="Scrivi un messaggio">
+                        </div>
+                        <div class="tasto-invio">
+                            <i class="fas fa-microphone"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script id="messaggio-template" type="text/x-handlebars-template">
+
+            <div class="chat-message {{direzione}}">
+                <p class="testo-messaggio">{{testoMessaggio}}</p>
+                <i class="fas fa-angle-down"></i>
+                <div class="message-time">
+                    <span>{{orario}}</span>
+                </div>
+                <div class="edit-message">
+                    <p>Message info</p>
+                    <p class="delete-msg">Delete message</p>
+                </div>
+            </div>
+
+        </script>
+
+        <script id="preview-template" type="text/x-handlebars-template">
+
+            <div class="chat-text">
+                <div class="profile-name-time">
+                    <div class="name">
+                        <h4>{{nomeContatto}}</h4>
+                    </div>
+                    <div class="time">
+                        <p>{{ultimoAccesso}}</p>
+                    </div>
+                </div>
+                <div class="profile-text">
+                    <p>ok</p>
+                </div>
+            </div>
+
+        </script>
+
+        <script src="js/main.js" charset="utf-8"></script>
+    </body>
+</html>

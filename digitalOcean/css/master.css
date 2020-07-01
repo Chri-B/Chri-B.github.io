@@ -1,0 +1,480 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #031b4e;
+    padding-bottom: 20px;
+}
+
+.ms--paragraph {
+    font-size: 20px;
+    color: #4e5f83;
+    font-weight: 300;
+    padding-bottom: 40px;
+}
+
+/* stilizzazione sfondo ocean */
+.sfondo-ocean {
+    background-image: url('https://www.digitalocean.com/assets/media/homepage/bg-home-1-d54581d7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* sfondo grigio */
+.sfondo-grigio {
+    background-color: #f3f5f9;
+}
+/* testo grigio */
+.testo-grigio {
+    color: #ccdaff;
+}
+/* stili button base Digital Ocean */
+.ms--button-sign-up {
+    color: #026aff;
+    padding: 8px 15px;
+    border: 1px solid #026aff;
+    border-radius: 5px;
+    margin-top: 6px;
+}
+.ms--button-sign-up:hover {
+    color: white;
+    background-color: #026aff;
+}
+
+.ms--button-blue {
+    background-color: #0069ff;
+    color: white;
+    border: none;
+}
+
+.ms--button-blue:hover {
+    background-color: #1633ff;
+}
+
+.ms--button-white {
+    background-color: white;
+    color: #0069ff;
+    border: none;
+}
+
+.ms--button-white:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #0069ff;
+    border: none;
+}
+/* stilizzazione barra fissa */
+.barra-fissa {
+    background-color: #0049ff;
+}
+
+.barra-fissa span {
+    line-height: 50px;
+    font-size: 14px;
+}
+
+.ms--hamburger {
+    background-color: transparent;
+    border: none;
+}
+
+.glyphicon-menu-hamburger {
+    color: white;
+}
+
+#sign-up-navbar {
+    display: none;
+}
+
+/* stilizzazione menu monitor */
+#menu-esteso {
+    display: none;
+}
+
+#menu-esteso div span:hover {
+    color: #0069ff;
+    cursor: pointer;
+}
+/* stilizzazione menu */
+@media screen and (min-width: 992px) {
+    .barra-fissa {
+        background-color: white;
+    }
+
+    .barra-fissa {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    #sign-up-navbar {
+        display: inherit;
+    }
+
+    #menu-esteso {
+        display: inherit;
+    }
+}
+
+
+/* stilizzazione section */
+section {
+    padding: 50px 0;
+}
+/* stilizzazione header */
+/* header {
+    height: 70px;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+    line-height: 70px;
+    background-color: white;
+} */
+
+.barra-fissa .glyphicon-menu-down {
+    font-size: 10px;
+}
+
+.logo-digitalocean {
+    height: 50px;
+    width: 250px;
+    transform: translateY(-140%);
+}
+
+.navbar-default {
+    background-color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #0e2556;
+    font-weight: 500;
+    padding-right: 15;
+}
+
+#ms--padding-button {
+    padding-top: 0;
+}
+
+/* inizio prima sezione  */
+
+.first {
+    padding-top: 100px;
+}
+.jumbotron {
+    margin-bottom: 0;
+    background-color: white;
+}
+
+.container .jumbotron, .container-fluid .jumbotron {
+    padding: 40px 20px 20px;
+}
+
+.jumbotron h4 {
+    text-align: center;
+    font-size: 30px;
+    margin: 0;
+    padding-bottom: 40px;
+}
+
+.ms--jumbotron {
+    color: white;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+.ms--jumbotron p {
+    padding: 40px 0;
+    font-size: 24px;
+}
+
+.linea-divisoria {
+    text-align: center;
+    padding: 20px 0;
+    color: #8b95aa;
+}
+
+.linea-divisoria::after,
+.linea-divisoria::before {
+    content: '';
+    display: inline-block;
+    width: 20%;
+    height: 1px;
+    background-color: #8b95aa;
+    position: relative;
+    bottom: 5px;
+    margin: 0 3%;
+}
+
+.linea-divisoria span {
+    font-size: 16px;
+}
+
+.bottoni-sign-up span {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.btn-group-lg > .btn, .btn-lg {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.bottoni-sign-up .btn {
+    background-color: #f2f8ff;
+    border-color: #c2dcff;
+}
+
+.bottoni-sign-up .btn:hover {
+    background-color: #d5e4f7;
+}
+
+.jumbotron p {
+    font-size: 12px;
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* inizio sezione second */
+#customers li img {
+    height: 100px;
+    object-fit: contain;
+}
+
+@media screen and (min-width: 450px) {
+    #splunk img {
+        max-width: 150px;
+    }
+}
+
+.second h4 {
+    color: #939eb4;
+}
+
+.ms--link {
+    font-size: 16px;
+    color: #0069ff;
+}
+/* hover link business solution */
+.second a:hover {
+    color: #005fe6;
+    text-decoration: none;
+}
+
+/* inizio sezione third */
+.ms--icona-card {
+    font-size: 40px;
+    color: #0069ff;
+}
+
+.titolo-card {
+    padding-bottom: 10px;
+    color: #031b4e;
+}
+
+.testo-card {
+    font-size: 16px;
+}
+
+#menu-deploy li {
+    color: #818da6;
+    font-size: 20px;
+    padding: 20px 0 20px 20px;
+    border-left: 2px solid #e5e8ed;
+}
+
+#menu-deploy #bordo-blu {
+    border-left: 2px solid #0069ff;
+    color: black;
+}
+
+#menu-deploy ul {
+    margin: 0 0 40px 40px;
+}
+
+#menu-deploy li:hover {
+    color: black;
+}
+/* inizio sezione fourth */
+.freccia-hidden span {
+    padding-top: 150px;
+    font-size: 30px;
+    display: none;
+}
+
+.ms--img-grande {
+    align-items: center;
+}
+
+.fourth .ms--paragraph {
+    font-size: 16px;
+    padding-top: 40px;
+}
+
+.fourth i {
+    padding: 0 2%;
+    color: #0069ff;
+}
+
+@media screen and (min-width: 768px) {
+    .freccia-hidden span {
+        display: inherit;
+    }
+}
+/* hover su freccia sinistra */
+.glyphicon-menu-right:hover {
+    color: #0069ff;
+    cursor: pointer;
+}
+
+.fas.fa-circle:hover,
+.far.fa-circle:hover {
+    cursor: pointer;
+}
+/* inizio sezione fifth */
+.fifth p {
+    padding-bottom: 20px;
+}
+
+.fifth .card-fifth {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.fifth a:hover {
+    color: #005fe6;
+    text-decoration: none;
+}
+/* inizio sezione sixth */
+.sixth {
+    background-color: #031b4e;
+    background-image: url('https://www.digitalocean.com/assets/media/homepage/data-center-map-20321538.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #8691aa;
+}
+
+.sixth h2 {
+    color: white;
+    padding-bottom: 60px;
+}
+
+#spaziatura-elenco {
+    padding-bottom: 40px;
+}
+
+.ms--div-capitali {
+    padding-top: 10px;
+    border-bottom: 1px solid #354971;
+}
+
+.ms--div-capitali-ultimo {
+    padding-top: 10px;
+}
+
+.sixth .codice {
+    color: white;
+}
+
+.sixth a {
+    color: #00d7d2;
+}
+
+.sixth a:hover {
+    color: #034fc0;
+    text-decoration: none;
+}
+/* inizio sezione seventh */
+
+.seventh i {
+    padding: 40px 2%;
+    color: #0069ff;
+}
+
+.glyphicon-menu-left {
+    color: #a9b2c4;
+}
+
+.seventh .jumbotron {
+    color: #727f9c;
+    border: 1px solid #e5e8ed;
+}
+
+.immagine-max-width {
+    max-width: 200px;
+}
+
+.seventh img {
+    padding-bottom: 20px;
+}
+
+.seventh h3 {
+    font-weight: 200;
+    line-height: 40px;
+}
+
+.seventh h5 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.seventh .aria-link {
+    padding: 20px;
+}
+
+.ms--link-teams {
+    color: #0069ff;
+    text-decoration: underline;
+}
+
+.seventh a:hover {
+    color: #034fc0;
+    text-decoration: none;
+}
+/* inizio sezione eighth */
+.eighth h2 {
+    color: white;
+}
+
+/* inizio footer */
+footer {
+    padding: 50px 0;
+    background-color: #010e28;
+    color: #767d8b;
+}
+
+footer h4 {
+    color: white;
+    margin-top: 40px;
+}
+
+footer i {
+    font-size: 50px;
+    color: #0080ff;
+    padding-bottom: 20px;
+}
+
+footer span {
+    font-size: 12px;
+    color: #4f586a;
+}
+
+footer ul li {
+    line-height: 30px;
+}
+
+footer ul li:hover {
+    color: white;
+    cursor: pointer;
+}

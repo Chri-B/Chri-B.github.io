@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <title>DigitalOcean</title>
+        <script src="https://kit.fontawesome.com/b125f3be7d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+         <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <!-- <header> NAVBAR DI BOOTSTRAP - NON UTILIZZATA - RIGHE DI CODICE SCRITTE COMUNQUE PER ESERCITAZIONE
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <div class="logo-digitalocean">
+                            <img class="img-responsive center-block" src="https://cdn.freebiesupply.com/logos/thumbs/1x/digitalocean-2-logo.png" alt="logo digitalocean">
+                        </div>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Products <span class="caret"></span></a></li>
+                            <li><a href="#">Customers</a></li>
+                            <li><a href="#">Marketplace</a></li>
+                            <li><a href="#">Community <span class="caret"></span></a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a id="ms-padding-button" href="#"><button type="button" name="button" class="ms-button-sign-up">Sign Up</button></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header> -->
+        <div class="barra-fissa">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="col-xs-10 col-sm-10 col-md-3">
+                            <div class="logo-digitalocean">
+                                <a href="#">
+                                    <img class="img-responsive center-block" src="https://cdn.freebiesupply.com/logos/thumbs/1x/digitalocean-2-logo.png" alt="logo digitalocean">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="contenitore-hamburger" class="col-xs-2 col-md-7 text-right">
+                            <div id="hamburger">
+                                <button type="button" class="ms--hamburger">
+                                    <span class="glyphicon glyphicon-menu-hamburger"></span>
+                                </button>
+                            </div>
+                            <div id="menu-esteso" class="row-no-gutters text-center">
+                                <div class="col-md-2">
+                                    <span>
+                                        Products <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                    </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>
+                                        Marketplace
+                                    </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>
+                                        Customers
+                                    </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>
+                                        Partners
+                                    </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>
+                                        Community <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                                    </span>
+                                </div>
+                                <div class="col-md-2">
+                                    <span>
+                                        Pricing
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sign-up-navbar" class="col-xs-2 col-md-2 text-right">
+                            <button class="ms--button-sign-up">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="first sfondo-ocean">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                        <div class="ms--jumbotron">
+                            <h1> Welcome to the developer cloud</h1>
+                            <p class="testo-grigio">We make it simple to launch in the cloud and scale up as you grow – with an intuitive control panel, predictable pricing, team accounts, and more.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-5 col-sm-offset-1 col-md-5 col-lg-5">
+                        <div class="jumbotron">
+                            <div class="container">
+                                <div class="row">
+                                    <h4>Deploy in seconds</h4>
+                                </div>
+                                <div class="row">
+                                    <form>
+                                      <div class="form-group">
+                                        <input placeholder="Full Name" class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                        <input placeholder="Email Address"class="form-control">
+                                      </div>
+                                      <div class="form-group">
+                                        <input placeholder="Create a password" class="form-control">
+                                      </div>
+                                      <button class="ms--button-blue btn-lg btn-block">Create your account</button>
+                                    </form>
+                                </div>
+                                <div class="row">
+                                    <div class="linea-divisoria">
+                                        <span>or sign up with</span>
+                                    </div>
+                                </div>
+                                <div class="row bottoni-sign-up">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 row-no-gutters">
+                                        <button class="btn btn-default btn-lg btn-block btn-goo">
+                                            <div class="col-xs-3">
+                                                <i class="fab fa-google"></i>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>Google</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 row-no-gutters">
+                                        <button class="btn btn-default btn-lg btn-block btn-goo">
+                                            <div class="col-xs-3">
+                                                <i class="fab fa-github"></i>
+                                            </div>
+                                            <div class="col-xs-9">
+                                                <span>GitHub</span>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                                <p>
+                                    By signing up you agree to the <a href="#"><ins>Terms of Service</ins></a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="customers" class="second sfondo-grigio text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h4 class="text-uppercase">innovative business trust digitalocean</h4>
+                    </div>
+                </div>
+                <ul class="row list-unstyled">
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" src="https://www.digitalocean.com/assets/media/homepage/logos/docker-bab60eeb.png" alt="docker">
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" src="https://www.digitalocean.com/assets/media/homepage/logos/gitlab-166e2067.png" alt="gitlab">
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" src="https://www.digitalocean.com/assets/media/homepage/logos/slack-e20293da.png" alt="slack">
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" src="https://www.digitalocean.com/assets/media/homepage/logos/hashicorp-4431df79.png" alt="hashicorp">
+                    </li>
+                    <li class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" src="https://www.digitalocean.com/assets/media/homepage/logos/wework-be6eab32.png" alt="wework">
+                    </li>
+                    <li id="splunk" class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                        <img class="img-responsive center-block" src="https://www.digitalocean.com/assets/media/homepage/logos/splunk-06b17d75.png" alt="splunk">
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <a href="#" class="ms--link">
+                            See business solutions <span class="glyphicon glyphicon-triangle-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="third">
+            <div class="container">
+                <div class="row aria-top">
+                    <div class="col-xs-12">
+                        <h2 class="text-center">Deploy and scale seamlessly</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="text-center ms--paragraph">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="menu-deploy" class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                        <nav>
+                            <ul class="list-unstyled">
+                                <li id="bordo-blu">Deploy</li>
+                                <li>Scale</li>
+                                <li>Store</li>
+                                <li>Secure</li>
+                                <li>Monitor</li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <div class="col-xs-6">
+                            <i class="ms--icona-card fas fa-dharmachakra"></i>
+                            <h4 class="titolo-card">Kubernetes in minutes</h4>
+                            <p class="testo-card ms--paragraph">Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="ms--icona-card fas fa-tint"></i>
+                            <h4 class="titolo-card">Flexible compute types</h4>
+                            <p class="testo-card ms--paragraph">With Standard, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="ms--icona-card fas fa-first-aid"></i>
+                            <h4 class="titolo-card">1-Click App Marketplace</h4>
+                            <p class="testo-card ms--paragraph">Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="ms--icona-card fas fa-globe"></i>
+                            <h4 class="titolo-card">Global availability</h4>
+                            <p class="testo-card ms--paragraph">Deploy to any of our data center locations – New York, SF, London, Amsterdam, Bangalore, and more.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fourth sfondo-grigio text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Designed for developers</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p class="ms--paragraph">Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 freccia-hidden">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-10">
+                        <img class="img-responsive center-block ms--img-grande" src="https://www.digitalocean.com/assets/media/homepage/screenshot-create-kubernetes-cluster-4a930955.jpg" alt="digital ocean page">
+                    </div>
+                    <div class="col-sm-1 freccia-hidden">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p class="ms--paragraph">Use Kubernetes to improve availability, scalability, and resource efficiency of your containerized applications.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <i class="fas fa-circle"></i>
+                        <i class="far fa-circle"></i>
+                        <i class="far fa-circle"></i>
+                        <i class="far fa-circle"></i>
+                        <i class="far fa-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fifth">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <h2>Built for business</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card-fifth col-xs-12 col-sm-3">
+                        <i class="ms--icona-card fas fa-shield-alt"></i>
+                        <h4 class="titolo-card">Reliable platform</h4>
+                        <p class="testo-card ms--paragraph">More than 100,000 developer teams worldwide trust DigitalOcean to support their business w/ a 99.99% uptime SLA for all services.</p>
+                        <a href="#" class="ms--link">
+                            Security <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </div>
+                    <div class="card-fifth col-xs-12 col-sm-3">
+                        <i class="ms--icona-card fas fa-file-excel"></i>
+                        <h4 class="titolo-card">Predictable pricing</h4>
+                        <p class="testo-card ms--paragraph">Leave complex pricing structures behind. Always know what you’ll pay per month with a flat, industry-leading pricing structure.</p>
+                        <a href="#" class="ms--link">
+                            Pricing <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </div>
+                    <div class="card-fifth col-xs-12 col-sm-3">
+                        <i class="ms--icona-card fas fa-headphones"></i>
+                        <h4 class="titolo-card">World-class service</h4>
+                        <p class="testo-card ms--paragraph">Free around-the-clock technical support for all customers, with additional benefits for premium support subscribers. You’ll feel the love.</p>
+                        <a href="#" class="ms--link">
+                            Support <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </div>
+                    <div class="card-fifth col-xs-12 col-sm-3">
+                        <i class="ms--icona-card fas fa-award"></i>
+                        <h4 class="titolo-card">Security and compliance</h4>
+                        <p class="testo-card ms--paragraph">Keep your data protected. Our platform is certified on multiple international standards, including SOC 1 Type II, SOC 2 Type II, ISO/IEC 27001, and PCI-DSS.</p>
+                        <a href="#" class="ms--link">
+                            Compliance <span class="glyphicon glyphicon-menu-right"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sixth">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center">Service your customers around the world from 12 data centers.</h2>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">ams2</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Amsterdam, Netherlands</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">ams3</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Amsterdam, Netherlands</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">blr1</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Bangalore, India</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">fra1</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Frankfurt, Germany</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">lon1</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>London, UK</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div id="spaziatura-elenco" class="ms--div-capitali-ultimo col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">nyc1</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>New York, USA</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6">
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">nyc2</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>New York, USA</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">nyc3</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>New York, USA</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">sfo1</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>San Francisco, USA</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">sfo2</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>San Francisco, USA</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">sgp1</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Singapore</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="ms--div-capitali-ultimo col-xs-12">
+                            <div class="codice col-xs-2">
+                                <p class="text-uppercase">tor1</p>
+                            </div>
+                            <div class="col-xs-6">
+                                <p>Toronto, Canada</p>
+                            </div>
+                            <div class="col-xs-4 text-right">
+                                <a href="#">
+                                    Test speed <span class="glyphicon glyphicon-menu-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seventh sfondo-grigio text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>Development teams love DigitalOcean</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1">
+                        <p class="ms--paragraph">
+                            Easily organize your infrastructure with Projects. And with <a class="ms--link-teams" href="#">Teams</a>, everyone can get their own account, with just the privileges they need to do their jobs.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 freccia-hidden">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                    </div>
+                    <div class="col-xs-12 col-sm-10">
+                        <div class="jumbotron text-center">
+                            <img class="center-block img-responsive" src="https://www.digitalocean.com/assets/media/homepage/teams/rockerbox-logo-51462da2.png" alt="rockerbox">
+                            <h3>"We have been able to make scaling the technical infrastructure of our business cost effective and efficient."</h3>
+                            <h5>Rick O'Toole</h5>
+                            <h6>Co-founder and CTO</h6>
+                            <div class="aria-link">
+                                <a class="ms--link" href="#">Read story <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-1 freccia-hidden">
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <i class="fas fa-circle"></i>
+                        <i class="far fa-circle"></i>
+                        <i class="far fa-circle"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="eighth sfondo-ocean text-center">
+            <div class="container">
+                <div class="row">
+                    <h2>Get started now.</h2>
+                    <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4">
+                        <button class="ms--button-white btn-lg btn-block">Create your account</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div class="row text-left">
+                    <div class="col-xs-12 col col-sm-6 col-md-4">
+                        <a href="#"><i class="fab fa-digital-ocean"></i></a>
+                        <p><span class="glyphicon glyphicon-copyright-mark" aria-hidden="true"></span>  2018 DigitalOcean, LLC. All rights reserved.</p>
+                        <span>Proudly made in NY</span>
+                    </div>
+                    <div class="col-xs-12 col col-sm-6 col-md-2">
+                        <h4>Company</h4>
+                        <ul class="text-capitalize list-unstyled">
+                            <li>about</li>
+                            <li>leadership</li>
+                            <li>link</li>
+                            <li>blog</li>
+                            <li>careers</li>
+                            <li>partner network</li>
+                            <li>referral program</li>
+                            <li>events</li>
+                            <li>press</li>
+                            <li>legal & security</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col col-sm-6 col-md-2">
+                        <h4>Products</h4>
+                        <ul class="text-capitalize list-unstyled">
+                            <li>droplets</li>
+                            <li>spaces</li>
+                            <li>kubernetes</li>
+                            <li>load balancers</li>
+                            <li>block storage</li>
+                            <li>tools & integrations</li>
+                            <li>one-Click apps</li>
+                            <li>API</li>
+                            <li>pricing</li>
+                            <li>documentation</li>
+                            <li>release notes</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col col-sm-6 col-md-2">
+                        <h4>Community</h4>
+                        <ul class="text-capitalize list-unstyled">
+                            <li>tutorials</li>
+                            <li>meetups</li>
+                            <li>Q&A</li>
+                            <li>write for donations</li>
+                            <li>droplets for demons</li>
+                            <li>hatch</li>
+                            <li>shop swag</li>
+                            <li>research program</li>
+                            <li>current research</li>
+                            <li>open source</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col col-sm-6 col-md-2">
+                        <h4>Support</h4>
+                        <ul class="text-capitalize list-unstyled">
+                            <li>contact support</li>
+                            <li>FAQ</li>
+                            <li>network status</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+    </body>
+</html>

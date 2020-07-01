@@ -1,0 +1,605 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* stilizzazione bottone bianco arancio */
+.btn-wo {
+    color: white;
+    background-color: #ff7a59;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 8px 20px;
+}
+/* inizio container fixed-bar */
+.fixed-bar {
+    background-color: #f5f8fa;
+    border-bottom: 1px solid #cbd6e2;
+    position: sticky;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.fixed-bar .lenguage-selector {
+    float: left;
+    line-height: 60px;
+}
+
+.fixed-bar img {
+    width: 16px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+.fixed-bar span:not(.symbol) {
+    padding-right: 20px;
+    color: #526274;
+    font-size: 12px;
+    border-right: 1px solid #cbd6e2;
+}
+
+.contact {
+    float: left;
+    line-height: 60px;
+}
+
+.contact a {
+    font-size: 12px;
+    color: #526274;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+.cta-fixed-bar {
+    margin-right: 30px;
+    float: right;
+    line-height: 60px;
+}
+
+.login {
+    background-color: #ffffff;
+    border: 1px solid #ff7a59;
+    color: #ff7a59;
+    margin: 0 10px 0 30px;
+}
+
+#magnifyng-glass {
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+/* inizio container HEADER: logo + navbar */
+.header {
+    height: 80px;
+    padding: 10px;
+    line-height: 60px;
+    text-transform: capitalize;
+    overflow-y: hidden; /* overflow per sporgenza div logo */
+}
+/* inserimento margine per centraggio logo */
+.header img {
+    margin: 15px 0;
+}
+
+#logo {
+    float: left;
+}
+
+#navbar {
+    float: right;
+}
+
+#navbar .symbol {
+    color: #7c98b6;
+}
+
+#navbar li {
+    float: left;
+    list-style: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 30px;
+    color: #33475b;
+}
+
+#navbar li:hover {
+    cursor: pointer;
+}
+/* fine container HEADER */
+/* inizio container FIRST */
+.first {
+    background-color: #425b76;
+}
+
+.first .container {
+    position: relative;
+}
+
+.first .container p {
+    width: 83%;
+    padding: 25px 30px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+}
+/* stilizzazione bottone bianco e blu */
+.btn-wb {
+    background-color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 25px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.first .btn-wb {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* link su bottone */
+.btn-wb a {
+    text-decoration: none;
+    color: #33475b;
+}
+
+.first .container span {
+    font-weight: 600;
+}
+
+/* fine container FIRST */
+/* inizio container SECOND */
+.second {
+    background-color: #fff2ee;
+    background-image: url('https://cdn2.hubspot.net/hubfs/53/assets/hubspot.com/home/2019/clouds-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.jumbotron-big {
+    width: 37%;
+    padding: 80px 0 100px;
+}
+
+.jumbotron-big h1,
+.jumbotron-big h2 {
+    color: #33475b;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+
+.jumbotron-big p {
+    color: #33475b;
+    font-weight: 300;
+}
+
+.btn-big {
+    font-size: 15px;
+    font-weight: normal;
+    padding: 25px 50px;
+    margin: 30px 0;
+}
+
+.jumbotron-big p:last-child {
+    width: 50%;
+    font-size: 12px;
+}
+
+/* fine container SECOND */
+/* inizio container COLOR */
+#color {
+    height: 80px;
+    background-image: linear-gradient(45deg, #afebe4, #00a48d);
+    border-top: 3px solid #33475b;
+    border-bottom: 3px solid #33475b;
+}
+/* fine container COLOR */
+/* inizio container THIRD */
+/* div powerful */
+.third {
+    background-color: #f5f8fa;
+    padding-bottom: 150px;
+}
+
+.container.small {
+    width: 80%;
+    text-align: center;
+}
+
+.powerful {
+    padding-top: 100px;
+}
+
+.powerful img {
+    width: 260px;
+}
+/* div free-hub */
+.free-hub {
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.cta-libro {
+    width: 40%;
+    padding: 50px 0;
+    float: left;
+}
+
+.btn-medium {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 12px 25px;
+    margin-top: 50px;
+}
+
+.cta-libro img {
+    width: 154px;
+}
+
+.popular-features {
+    width: 60%;
+    float: left;
+    text-align: left;
+    color: #394c60;
+}
+
+.titolo-carte {
+    font-size: 20px;
+    font-weight: 600;
+    color: #33475b;
+}
+
+.content h4 {
+    padding: 10px 0;
+}
+
+.box.clearfix h4 {
+    margin-bottom: 30px;
+    padding-top: 40px;
+}
+
+.testo-carte {
+    color: #394c60;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.testo-linea {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 20px 0 10px;
+}
+
+.popular-features .lista ul li{
+    display: inline-block;
+    font-size: 14px;
+}
+
+.check-orange {
+    font-size: 30px;
+    color: #ff7a59;
+    padding-right: 5px;
+}
+
+.lista.orizzontale ul li:nth-child(even) {
+    padding: 0 20px;
+}
+
+.card {
+    width: 33.33333%;
+    float: left;
+}
+
+.content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+.content img {
+    height: 150px;
+}
+
+.content p {
+    text-align: left;
+    padding: 0 10px 20px;
+    border-bottom: 1px solid #e0e6ed;
+}
+
+.content ul li {
+    list-style: none;
+}
+
+.content .lista{
+    text-align: justify;
+}
+
+.content .btn-wo {
+    margin: 30px auto 10px;
+}
+
+#card-centrale {
+    margin: 30px 10px 0;
+}
+
+#card-sinistra {
+    margin: 30px 20px 0 0;
+}
+
+#card-destra {
+    margin: 30px 0 0 20px;
+}
+/* fine container THIRD */
+/* inizio container FOURTH */
+.fourth {
+    background-image: linear-gradient(45deg, #00a4bd, #00bda5);
+}
+
+.fourth .jumbotron {
+    padding: 100px 100px 30px;
+}
+
+.fourth .jumbotron h2 {
+    color: #ffffff;
+}
+
+.fourth .subtitle {
+    color: #ffffff;
+}
+
+h2 {
+    color: #33475b;
+    font-size: 30px;
+}
+
+.subtitle {
+    width: 80%;
+    color: #33475b;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 30px 0 50px;
+    margin: 0 auto;
+}
+/* stilizzazione tabella */
+.tabella {
+    padding-bottom: 100px;
+}
+
+.riquadro {
+    width: 25%;
+    float: left;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 30px 10px;
+}
+
+.riquadro h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.riquadro p {
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.small-plus {
+    font-weight: 300;
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.hubspot-symbols img {
+    height: 33px;
+}
+
+.riquadro-destra {
+    border-right: none;
+}
+
+.riga-sotto {
+    border-bottom: none;
+}
+
+#symbol-small {
+    height: 23px;
+}
+/* fine container FOURTH */
+/* inizio container FIFTH */
+.fifth {
+    background-color: #ffffff;
+}
+
+.fifth .top {
+    padding: 100px 0 50px;
+}
+
+.n-customer {
+    width: 30%;
+    padding: 0 50px 0 90px;
+    color: #33475b;
+    float: left;
+}
+
+.n-customer h2 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.n-customer p {
+    font-weight: 300;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.n-customer span {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.brands {
+    width: 70%;
+    text-align: center;
+    float: left;
+    padding-left: 50px;
+}
+
+.brands .riquadro-brand {
+    float: left;
+    width: 25%;
+}
+
+.brands .riquadro-brand img {
+    width: 110px;
+    margin: 20px 30px;
+}
+
+.fifth .jumbotron-big {
+    float: left;
+}
+
+.fifth .jumbotron-big p:last-child {
+    width: 100%;
+}
+
+.fifth .jumbotron-big h2 {
+    font-size: 30px;
+}
+
+.ritratto {
+    width: 63%;
+    float: right;
+}
+
+.fifth img {
+    margin: 30px;
+    float: right;
+    width: 350px;
+}
+
+.fifth .bottom {
+    padding-bottom: 80px;
+}
+/* fine container FIFTH */
+/* inizio container SIXTH */
+.sixth {
+    background-color: #33475b;
+}
+
+.riquadro-elenco {
+    width: 25%;
+    float: left;
+    color: #ffffff;
+    padding-top: 100px;
+}
+
+.riquadro-elenco li {
+    text-transform: capitalize;
+    list-style: none;
+    line-height: 50px;
+    font-size: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    color: #cbd6e2;
+}
+
+.icone li {
+    float: left;
+    width: 16%;
+    font-size: 20px;
+}
+
+.riquadro-elenco h5 {
+    font-size: 15px;
+}
+
+.riquadro-elenco ul li button {
+    font-size: 11px;
+    color: #34485c;
+    text-transform: capitalize;
+    padding: 10px 20px;
+}
+
+.lenguages {
+    text-align: center;
+    color: #c5d1dd;
+    padding: 50px 0 40px 0 ;
+}
+
+.lenguages li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+footer {
+    border-top: 1px solid #7c98b6;
+    position: relative;
+    color: #a7b4c2;
+}
+
+footer #logo-gray {
+    padding: 40px 0;
+}
+
+#copyright {
+    font-size: 12px;
+    padding: 10px 0;
+}
+
+.privacy {
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.privacy span {
+    margin: 0 20px;
+}
+/* fine container SIXTH */
+/* icona fissa chat */
+.fixed-chat i {
+    color: white;
+    background-color: #425b76;
+    border-radius: 50%;
+    display: inline;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.fixed-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

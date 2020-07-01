@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify Web</title>
+        <script src="https://kit.fontawesome.com/b125f3be7d.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/master.css">
+    </head>
+    <body>
+        <div class="clearfix">
+            <aside>    <!-- SideBar, fissa -->
+                <div class="flex">
+                    <div class="top">
+                        <div id="logo">
+                            <i class="fab fa-spotify"></i>
+                            <h2>Spotify</h2>
+                        </div>
+                        <div class="navbar">
+                            <div class="icone-navigazione">
+                                <div class="contenitore-icone">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h6>Home</h6>
+                            </div>
+                            <div class="icone-navigazione">
+                                <div class="contenitore-icone">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <h6>Cerca</h6>
+                            </div>
+                            <div class="icone-navigazione">
+                                <div class="contenitore-icone">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <h6>La tua libreria</h6>
+                            </div>
+                        </div>
+                        <div class="elenco-playlist">
+                            <h5>PLAYLIST</h5>
+                            <div id="crea-playlist" class="nome-playlist">
+                                <i class="fas fa-plus-square"></i>
+                                <h6>Crea Playlist</h6>
+                            </div>
+                            <div class="nome-playlist">
+                                <h6>Avengers: End Game</h6>
+                            </div>
+                            <div class="nome-playlist">
+                                <h6>Avengers: Infinity War</h6>
+                            </div>
+                            <div class="nome-playlist">
+                                <h6>Avengers: Age of Ultron</h6>
+                            </div>
+                            <div class="nome-playlist">
+                                <h6>Captain America: Civil War</h6>
+                            </div>
+                            <div class="nome-playlist">
+                                <h6>Guardians of the Galaxy vol. 2</h6>
+                            </div>
+                            <div class="nome-playlist">
+                                <h6>Thor Ragnarok</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <div class="footer-aside">
+                            <div class="install-app">
+                                <i class="far fa-arrow-alt-circle-down"></i>
+                                <span>Installa app</span>
+                            </div>
+                            <div class="user">
+                                <i class="fas fa-user-circle"></i>
+                                <span>Chri B</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <main>    <!-- Container principale -->
+                <div class="overlay-top">    <!-- barra overlay trasparente con bottone -->
+                    <div>
+                        <button class="btn-upgrade"><a href="#">effettua l'upgrade</a></button>
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            in evidenza
+                            <div class="linea"></div>
+                        </li>
+                        <li>
+                            podcast
+                            <div class="linea"></div>
+                        </li>
+                        <li>
+                            classifiche
+                            <div class="linea"></div>
+                        </li>
+                        <li>
+                            generi e mood
+                            <div class="linea"></div>
+                        </li>
+                        <li>
+                            nuove uscite
+                            <div class="linea"></div>
+                        </li>
+                        <li>
+                            scopri
+                            <div class="linea"></div>
+                        </li>
+                    </ul>
+                </div>
+                <section class="heroes">    <!-- sezione recently played -->
+                    <h2>Heroes</h2>
+                    <div class="cards-affiancate">
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://cdn.pinkvilla.com/files/styles/contentpreview/public/iron-man-phase-4_0.jpg?itok=X0sQ_QHs" alt="iron man">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Iron Man</h4>
+                                <p>Tony Stark</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://news.toyark.com/wp-content/uploads/sites/4/2019/05/Iron-Studios-Endgame-Captain-America-019.jpg" alt="captain america">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Captain America</h4>
+                                <p>Steve Rogers</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://cdn3.movieweb.com/i/article/IgnKfoapCgme0vuKO5vVEkbWadx8Nx/1200:100/5-Things-That-Must-Happen-In-Thor-The.jpg" alt="thor">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Thor</h4>
+                                <p>Thor Odinson</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://m.media-amazon.com/images/M/MV5BZjZlOTczYjItMDI2NC00Yjg2LWJiMmEtY2E1OWViMTg2ZWYzXkEyXkFqcGdeQXVyNDQxNjcxNQ@@._V1_UX666_CR0,0,666,666_AL_.jpg" alt="Doctor Strange">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Doctor Strange</h4>
+                                <p>Stephen Strange</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="http://www.newsarama.com/images/i/000/144/328/original/The-Amazing-Spiderman-2-wallpaper.jpg?1425657356" alt="spiderman">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Spiderman</h4>
+                                <p>Peter Parker</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://comicvine1.cbsistatic.com/uploads/original/11/113509/5168966-widowcw.jpg" alt="black widow">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Black Widow</h4>
+                                <p>Natasha Romanov</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://imgix.ranker.com/user_node_img/50095/1001891807/original/best-of-both-worlds-photo-u1?w=650&q=50&fm=pjpg&fit=crop&crop=faces" alt="hulk">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Hulk</h4>
+                                <p>Bruce Banner</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://images.wallpapersden.com/image/download/marvel-black-panther-artwork_61594_1224x1224.jpg" alt="black panther">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Black Panther</h4>
+                                <p>King T'Challa</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://comicvine1.cbsistatic.com/uploads/square_small/11/113509/5168967-wanda.jpg" alt="scarlet witch">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Scarlet Witch</h4>
+                                <p>Wanda Maximoff</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://i.pinimg.com/originals/a5/2d/f3/a52df31143d59588401db1d412699c88.jpg" alt="visione">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Vision</h4>
+                                <p>Jarvis Umanoid</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://i.pinimg.com/originals/b8/20/12/b8201271d4e1595d57ad2e40b6b4c038.jpg" alt="baby groot">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Baby Groot</h4>
+                                <p>Alien three</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://assets3.thrillist.com/v1/image/2787427/size/sk-2017_04_featured_listing_mobile.jpg" alt="captain marvel">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Captain Marvel</h4>
+                                <p>Carol Danvers</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="villains">    <!-- sezione recently played -->
+                    <h2>Villains</h2>
+                    <div class="cards-affiancate">
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://i.pinimg.com/736x/ee/0d/73/ee0d732de22b580d664f530d5ba3598c.jpg" alt="thanos">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Thanos</h4>
+                                <p>The Mad Titan</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://static.tvtropes.org/pmwiki/pub/images/ultron_prime.jpg" alt="ultron">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Ultron</h4>
+                                <p>Evil Robot</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://vignette.wikia.nocookie.net/marvelmovies/images/3/30/Red_Skull.jpg/revision/latest/top-crop/width/480/height/480?cb=20131115222806" alt="red skull">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Red Skull</h4>
+                                <p>Nazi Scientist</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://www.psychologyjunkie.com/wp-content/uploads/2015/08/loki.jpg" alt="Loki">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Loki</h4>
+                                <p>The Trickster God</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://comicvine1.cbsistatic.com/uploads/original/3/38919/6892429-cea06235aff46066aa8a96c84dd4d9ac.jpg" alt="hela">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Hela</h4>
+                                <p>Goddess of Death</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/d/da/Dormammu_Concept_Art_2.jpg/revision/latest?cb=20170324054757" alt="Dormammu">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Dormammu</h4>
+                                <p>Lord of the Netherworlds</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://i.pinimg.com/originals/08/7c/05/087c05d8fd4e4c4ecdcf1285a39517c1.jpg" alt="Whiplash">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Whiplash</h4>
+                                <p>Anton Vanko</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://ae01.alicdn.com/kf/HTB1fb60PFXXXXXPXpXXq6xXFXXXu/Halloween-Captain-America-3-COS-Barnes-Winter-Soldier-civil-war-Winter-Soldier-arm-armor-arms.jpg" alt="winter soldier">
+                            </div>
+                            <div class="testo-card">
+                                <h4>The Winter Soldier</h4>
+                                <p>Bucky</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://cdn3.volusion.com/7aztx.j6veq/v/vspfiles/photos/HP0146-5.jpg?1399989569" alt="chitauri">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Chitauri</h4>
+                                <p>Skrull Soldiers</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="items">    <!-- sezione items -->
+                    <h2>Items</h2>
+                    <div class="cards-affiancate">
+                        <div class="card">
+                            <div class="card-preview rotonda">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://vignette.wikia.nocookie.net/universocinematograficomarvel/images/e/eb/Infinity_stones_low.png/revision/latest/scale-to-width-down/300?cb=20150915014459&path-prefix=pt" alt="infinity stones">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Infinity Stones</h4>
+                                <p>Control of the universe</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview rotonda">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://bestwallpapers.in/wp-content/uploads/2018/04/thor-avengers-hammer-mjolnir-5k-wallpaper-1280x1280.jpg" alt="mjolnir">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Mjolnir</h4>
+                                <p>"...if he be worthy..."</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview rotonda">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://img1.cgtrader.com/items/1843699/59c69a2166/large/stormbreaker-3d-model-obj-mtl-fbx-ma-mb-stl-ztl.jpg" alt="stormbreaker">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Stormbreaker</h4>
+                                <p>Basically an Upgraded Mjolnir</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview rotonda">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://imgaz2.staticbg.com/thumb/large/oaupload/banggood/images/88/62/f0199229-5bd6-4bfc-aaa2-35b149abb20e.jpg" alt="ark Reactor">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Ark Reactor</h4>
+                                <p>Tony's Heart</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-preview rotonda">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://ae01.alicdn.com/kf/HTB1FADuXIfrK1Rjy0Fmq6xhEXXaQ/LED-Light-Thanos-Infinity-Gauntlet-Avengers-Infinity-War-Cosplay-LED-Gloves-PVC-Adult-Kids-Toys-Gift.jpg" alt="infinity glove">
+                            </div>
+                            <div class="testo-card">
+                                <h4>Infinity Glove</h4>
+                                <p>Thanos' weapon</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="tony-tribute">    <!-- sezione tribute -->
+                    <div class="cards-affiancate">
+                        <div class="card">
+                            <div class="card-preview rotonda">
+                                <div class="play-card">
+                                    <i class="far fa-play-circle"></i>
+                                </div>
+                                <img src="https://i.redd.it/20bzcg94xkv21.jpg" alt="iron man">
+                            </div>
+                            <div class="testo-card">
+                                <h2><q cite="Endgame">...I &hearts; you 3000</q></h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>    <!-- Barra di riproduzione contenuti, fissa -->
+                <div class="playing-song">    <!-- brano in riproduzione -->
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Avengers_Assemble.jpg/120px-Avengers_Assemble.jpg" alt="Avengers Assemble">
+                    <div class="testo-brano">
+                        <a href="#"class="titolo-brano">Avengers</a>
+                        <p class="autore-brano">Alan Silvestri</p>
+                    </div>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+                <div class="comandi-riproduzione">    <!-- comandi per la riproduzione -->
+                    <div class="comandi">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo"></i>
+                    </div>
+                    <div class="progress-bar">
+                        <span>2:15</span>
+                        <div id="progress"></div>
+                        <span>4:35</span>
+                    </div>
+                </div>
+                <div class="comandi-output">    <!-- comandi volume e periferiche -->
+                    <i class="fas fa-list-ul"></i>
+                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <div id="volume-bar"></div>
+                </div>
+            </footer>
+        </div>
+        </body>
+</html>
