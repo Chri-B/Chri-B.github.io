@@ -299,3 +299,9 @@ hr {
 .about h4 {
     color: #666;
 }
+
+@media screen and (min-width: 1200px) {
+    .img-heigth {
+        height: 189px;
+    }
+}
