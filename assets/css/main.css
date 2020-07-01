@@ -250,13 +250,16 @@ bt {
 #avatar {
     height: 150px;
 }
-
+.box-grande {
+    position: relative;
+}
 #logo {
     position: absolute;
-    top: 50%;
+    top: 100px;
     transform: translateY(-50%);
     left: 20px;
     height: 100px;
+    z-index: 99999999;
 }
 
 @media (max-width: 1400px) {
@@ -304,4 +307,9 @@ hr {
     .img-heigth {
         height: 189px;
     }
+}
+
+.navbar-collapse {
+    box-shadow: none;
+    text-align: end;
 }
